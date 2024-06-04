@@ -3,6 +3,34 @@ body {
     background-color: #f0f0f0;
 }
 
+
+
+
+  header {
+    display: flex;
+    justify-content: center;
+    animation: bopping 2s ease-in-out infinite;
+  }
+  
+  @keyframes bopping {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
 .container {
     max-width: 500px;
     margin: 0 auto;
@@ -12,6 +40,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
     margin-top: 105px;
+    background: #6bb8e8;
 }
 
 h1 {
